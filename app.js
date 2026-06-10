@@ -1,5 +1,5 @@
 // Paste your Vercel Edge Config connection URL here
-const VERCEL_JSON_URL = "YOUR_VERCEL_EDGE_CONFIG_CONNECTION_STRING_URL_HERE";
+const VERCEL_JSON_URL = "https://edge-config.vercel.com/ecfg_srdqey6cikfart3lha8pbdldtguu?token=a3a0dac7-4a8f-43e6-8a27-e6f847afdf45";
 
 let listItems = [];
 
