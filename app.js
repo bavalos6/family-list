@@ -1,10 +1,11 @@
 // Extracted credentials from your Edge Config link
 const EDGE_CONFIG_ID = "ecfg_srdqey6cikfart3lha8pbdldtguu";
-const TEAM_OR_USER_TOKEN = "a3a0dac7-4a8f-43e6-8a27-e6f847afdf45";
+// This tells your app to look for the variable injected by Vercel
+const VERCEL_WRITE_TOKEN = window.process?.env?.VERCEL_WRITE_TOKEN || "";
 
 // Correct Vercel read and write API endpoints
 const READ_URL = `https://edge-config.vercel.com/${EDGE_CONFIG_ID}`;
-const WRITE_URL = `https://api.vercel.com/v1/edge-config/${EDGE_CONFIG_ID}/items`;
+const WRITE_URL = `https://api.vercel.com/v1/edge-config/${VERCEL_WRITE_TOKEN}/items`;
 
 let allLists = [];
 let currentListId = null; // null means we are looking at the dashboard selection page
